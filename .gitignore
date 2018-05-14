@@ -1,1 +1,5 @@
-kafka/
+kafka/*
+out/
+gradle/
+.gradle/
+.idea/

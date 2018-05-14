@@ -1,3 +1,5 @@
+import json
+
 from confluent_kafka import Producer
 
 conf = {
@@ -8,7 +10,8 @@ conf = {
 
 p = Producer(**conf)
 
-for data in ['hi', 'world']:
-    p.produce('user', data.encode('utf-8'))
+data = {"text": "hello", "hashtag": "k1"}
+p.produce('user', json.dumps(data, indent=4,
+                             ).encode('utf-8'))
 
 p.flush()
