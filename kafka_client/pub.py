@@ -10,7 +10,7 @@ conf = {
 
 p = Producer(**conf)
 
-data = {"text": "hello", "hashtag": "k1"}
+data = {"text": "hello", "hashtag": "k2"}
 p.produce('user', json.dumps(data, indent=4,
                              ).encode('utf-8'))
 

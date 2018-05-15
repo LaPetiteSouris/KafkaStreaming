@@ -7,7 +7,7 @@ conf = {
 
 }
 c = Consumer(**conf)
-c.subscribe(['user'])
+c.subscribe(['streams-user-fraud'])
 
 while True:
     msg = c.poll(timeout=1.0)
