@@ -1,5 +1,6 @@
-kafka/*
-out/
-gradle/
-.gradle/
-.idea/
+kafka_stream_java/kafka/*
+kafka_stream_java/out/
+kafka_stream_java/gradle/
+kafka_stream_java/.gradle/
+kafka_stream_java/.idea/
+node_fanout_message/node_modules
