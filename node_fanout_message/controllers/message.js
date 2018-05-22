@@ -6,7 +6,7 @@ const kafkaProducerPromise = kafkaLib.buildKafkaProducer()
 
 const ackMessage = (req, res, next) => {
 	const payload = [{
-		topic: 'user',
+		topic: 'fwd',
 		messages: [req.body.content], // multi messages should be a array, single message can be just a string,
 		key: 'theKey', // string or buffer, only needed when using keyed partitioner
 		attributes: 1,
